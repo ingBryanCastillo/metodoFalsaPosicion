@@ -19,28 +19,7 @@ public class MetoPosicionFalsaGUI extends JFrame implements ActionListener {
   private JButton btnCalcular;
   
   public MetoPosicionFalsaGUI() {
-    /*super("Método de la posición falsa");
-    
-    JPanel panel = new JPanel();
-    
-    txtA = new JTextField(10);
-    txtB = new JTextField(10);
-    txtTol = new JTextField(10);
-    
-    btnCalcular = new JButton("Calcular");
-    btnCalcular.addActionListener(this);
-    
-    panel.add(txtA);
-    panel.add(txtB);
-    panel.add(txtTol);
-    panel.add(btnCalcular);
-    
-    add(panel);
-    
-    setSize(400, 100);
-    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    setLocationRelativeTo(null);
-    setVisible(true);*/
+
   }
 
     public MetoPosicionFalsaGUI(frmPrincipal VistaPrincipal) {
@@ -56,10 +35,7 @@ public class MetoPosicionFalsaGUI extends JFrame implements ActionListener {
     double a = Double.parseDouble(this.VistaPrincipal.txtX1.getText());
     double b = Double.parseDouble(this.VistaPrincipal.txtXu.getText());
     double tol = Double.parseDouble(this.VistaPrincipal.txtTol.getText());
-    
-    /*double a = Double.parseDouble(txtA.getText());
-    double b = Double.parseDouble(txtB.getText());
-    double tol = Double.parseDouble(txtTol.getText());*/
+
     String funcion = this.VistaPrincipal.txtFuncion.getText();
     Funcion f = new Funcion(funcion);
     
